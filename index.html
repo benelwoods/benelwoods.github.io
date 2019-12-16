@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fineline Photography</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type = "text/css" href = "stylesheet.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/pwa3qti.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/f4efa3f32e.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div class="section_one">
+      <div class="row_one">
+        <div class="column_one">
+          <!-- <h1>FINELINE <span style="color:#5C7780;">PHOTOGRAPHY</span></h1> -->
+          <h1 class="typewriter"></h1>
+          <h1 class="blinking"></h1>
+        </div>
+      <div class="navigation">
+        <ul>
+          <li><a href="index.html"class="active">HOME</li></a>
+          <li><a href="https://www.google.co.nz">WEDDINGS</li></a>
+          <li><a href="portfolio.html">PORTFOLIO</li></a>
+          <li><a href="https://www.google.co.nz">DETAILS</li></a>
+          <li><a href="contact.html">CONTACT</li></a>
+        </ul>
+      </div>
+      </div>
+      <div class="row_two">
+      <div class="flexslider">
+        <ul class="slides">
+          <li>
+            <img src="images/slider/1.jpg" />
+          </li>
+          <li>
+            <img src="images/slider/2.jpg" />
+          </li>
+          <li>
+            <img src="images/slider/3.jpg" />
+          </li>
+          <li>
+            <img src="images/slider/4.jpg" />
+          </li>
+          <li>
+            <img src="images/slider/5.jpg" />
+          </li>
+          <li>
+            <img src="images/slider/6.jpg" />
+          </li>
+          <li>
+            <img src="images/slider/7.jpg" />
+          </li>
+          <li>
+            <img src="images/slider/8.jpg" />
+          </li>
+          <li>
+            <img src="images/slider/9.jpg" />
+          </li>
+          <li>
+            <img src="images/slider/10.jpg" />
+          </li>
+        </ul>
+      </div>
+      </div>
+      </div>
+      <div class="section_two">
+    <hr style="width:70%;color:#d3d3d3;margin-bottom: 6vh;">
+    <!-- <div class="row_three">
+      <div class="column_one">
+    		<h1 class="changing_text"></h1>
+      </div>
+      <div class="column_two">
+        <h1>from just $250 an hour</h1>
+      </div>
+    </div> -->
+        <div class="title">
+          <div class="border">
+            <h2>Nice Things People Say</h2>
+          </div>
+        </div>
+      <div class="row_four">
+        <div class="column_one">
+          <h3>SIMON + ELEANOR<h3>
+          <img alt="Simon and Eleanor" src="images/simon_eleanor.jpg">
+          <p>"The Photographer was always going to be a crucial part of our Wedding day and I had huge expectations of Larissa. She knew her stuff, knew her way around our wedding better than we did in fact, was quietly there whenever I expected to see her, and always with a smile on her face. She directed us gently in our formal photos but was ultra focused and alert to the coolest moments and the feelings we wanted captured from our magical day."</p>
+        </div>
+        <div class="vertical_divider"></div>
+        <div class="column_two">
+          <h3>ANDREW + SARAH<h3>
+            <img alt="Andrew and Sarah" src="images/andrew_sarah.jpg">
+              <p>"Larissa made our whole wedding experience just that much more special. Working with her was so relaxing from the moment we met, to the final photo production. She has a great sense of humor and instantly new what we wanted. The engagement shoot was a great way to practice being in the spotlight prior to the big day and gave us some great shots. She also taught us some classic photo moves that gave photos on the day a completely natural look. On our special day she arrived early and captured the whole wedding experience. Her photos really capture the love between Andrew and I. She captured the ceremony so beautifully and in complete stealth. It was only on viewing the photos that we realized how much effort she went into. Larissa made every effort to capture photos of friends and family enjoying themselves."</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="row_five">
+      <div class="column_one">
+        <ul>
+          <li><a href="index.html">HOME</li></a>
+          <li><a href="">WEDDINGS</li></a>
+          <li><a href="portfolio.html">PORTFOLIO</li></a>
+          <li><a href="">DETAILS</li></a>
+          <li><a href="contact.html">CONTACT</li></a>
+      </div>
+        <div class="column_two">
+          <div class="social_icons">
+            <ul>
+              <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i></li></a>
+              <li><a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></li></a>
+              <li><a href="https://mail.google.com"><i class="fa fa-envelope" aria-hidden="true"></i></li></a>
+            </ul>
+          </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+    <!-- Flex Slider -->
+    <script defer src="js/jquery.flexslider.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        SyntaxHighlighter.all();
+      });
+      $(window).load(function(){
+        $('.flexslider').flexslider({
+          animation: "slide",
+          start: function(slider){
+            $('body').removeClass('loading');
+          }
+        });
+      });
+    </script>
+  </footer>
+</html>

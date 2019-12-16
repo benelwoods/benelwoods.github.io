@@ -1,0 +1,519 @@
+  html {
+    padding: 0;
+    min-height: 100%;
+    position: relative;
+  }
+
+  body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30vh;
+    }
+
+  h1 {
+    font-family: roboto,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 60px;
+  }
+
+  h2 {
+    font-family: alegreya,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    margin: 0 0 1vh 0;
+  }
+  h3 {
+    font-family: roboto,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 26px;
+  }
+
+  p {
+    font-family: alegreya,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  ::selection {
+    color: #ffffff;
+    background: #000000;
+  }
+
+/* Section One */
+
+  .section_one {
+
+  }
+
+  .section_one .row_one {
+  text-align: center;
+  display: block;
+  min-height: 4.5em;
+  max-height: 4.5em;
+  margin-top: 2em;
+  }
+
+  .section_one .row_one .column_one {
+    display: inline-block;
+    height: 100%;
+    width: 40%;
+    float: left;
+    margin-left: 3em;
+    animation: slide 1s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slide {
+    0% {margin-left:-15em; color:white;}
+    100% {margin-left:3em; color:black;}
+  }
+
+  .section_one .row_one .column_one h1 {
+    float: left;
+  }
+
+  .typewriter:after {
+    content: "";
+    animation: typewriter 1.5s linear 1;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+  }
+
+  @keyframes typewriter {
+    0% { content:"F|"; }
+    5.3% { content:"FI|"; }
+    10.6% { content:"FIN|"; }
+    15.9% { content:"FINE|"; }
+    21.2% { content:"FINEL|"; }
+    26.5% { content:"FINELI|"; }
+    31.8% { content:"FINELIN|"; }
+    37.1% { content:"FINELINE|"; }
+    42.4% { content:"FINELINE |"; }
+    47.7% { content:"FINELINE P|"; }
+    53% { content:"FINELINE PH|"; }
+    58.3% { content:"FINELINE PHO|"; }
+    63.6% { content:"FINELINE PHOT|"; }
+    68.9% { content:"FINELINE PHOTO|"; }
+    74.2% { content:"FINELINE PHOTOG|"; }
+    79.5% { content:"FINELINE PHOTOGR|"; }
+    84.8% { content:"FINELINE PHOTOGRA|"; }
+    90.1% { content:"FINELINE PHOTOGRAP|"; }
+    95.4% { content:"FINELINE PHOTOGRAPH|"; }
+    100% { content:"FINELINE PHOTOGRAPHY"; }
+  }
+
+  .blinking:before {
+    content: "";
+    animation: blinking 0.8s linear 5;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes blinking {
+    0% { content:"FINELINE PHOTOGRAPHY|"; }
+    100% { content:"FINELINE PHOTOGRAPHY"; }
+  }
+
+  .section_one .row_one h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+  }
+
+  .section_one .row_one .navigation {
+    min-width: 40%;
+    max-width: 60%;
+    display: block;
+    position: relative;
+    float: right;
+  }
+
+  .section_one .row_one .navigation ul {
+
+  }
+
+  .section_one .row_one .navigation ul li {
+    display: inline-block;
+    font-family: alegreya,serif;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  .section_one .row_one .navigation ul li a {
+    text-decoration: none;
+    font-style: normal;
+    color: #000000;
+    margin: 0vw 1vw 0vw 0vw;
+    padding: 15px 20px 10px 20px;
+    border: 2px solid #ffffff;
+    transition: 0.25s;
+    transition-timing-function: ease;
+  }
+
+  .section_one .row_one .navigation ul li a:hover{
+    border: 2px solid #5C7780;
+    color: #5C7780;
+    transition:0.25s;
+    transition-timing-function: ease;
+  }
+
+  .section_one .row_one .navigation ul li a.active {
+    border: 2px solid #5C7780;
+    color: #5C7780;
+    background: transparent;
+  }
+
+/* Row Two */
+
+  .section_one .row_two {
+    padding: 2vh 0 2vh 0;
+    height: 200vh;
+  }
+
+  .section_one .row_two #mygallery a img {
+
+  }
+
+
+  .row_three {
+    /* border: 5px solid green; */
+    width: 100%;
+    display: block;
+    height: 15vh;
+  }
+
+  .row_three .column_one {
+    display: block;
+    /* border: 3px solid blue; */
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+  }
+
+  .row_three .column_one h1 {
+    font-weight: 500;
+    text-transform: none;
+    text-align: right;
+    margin: 0;
+    padding: 2.5vh 0.3vw 0 0;
+  }
+
+  .changing_text {
+  	animation: pulse 9s infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes pulse {
+    0% { color: white; }
+  	6.25% { color: black; }
+  	12.5% { color: black;	}
+  	25% { color: white; }
+  	37.5% { color: black; }
+  	50% { color: black; }
+  	62.5% { color: white; }
+  	75% { color: black; }
+    93.75% { color: black; }
+    100% { color: white; }
+  }
+
+  .changing_text:after {
+  	content: "";
+  	animation: change 9s linear infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes change {
+    0% { content:"commercial interiors"; }
+    24.9% { content:"commercial interiors"; }
+    25% { content:"corporate events"; }
+    62.4% { content:"corporate events"; }
+    62.5% { content:"food photography"; }
+    100% { content:"food photography"; }
+  }
+
+/* Column Two */
+
+  .row_three .column_two {
+    display: inline-block;
+    /* border: 3px solid red; */
+    width: 50%;
+    height: 100%;
+  }
+
+  .row_three .column_two h1 {
+    font-weight: 300;
+    text-transform: none;
+    text-align: left;
+    margin: 0;
+    padding: 2.5vh 0 0 0.3vw;
+  }
+
+/* Row Three */
+
+  .row_three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* Row Four */
+
+  .row_four {
+    display: inline-block;
+    width: 70%;
+    text-align: center;
+    /* width: 100%; */
+    min-height: 84vh;
+    max-height: 103.5vh;
+    border: 2px solid black;
+    margin: 0 15% 0 15%;
+  }
+
+  .row_four .vertical_divider{
+    display: inline-block;
+    min-height: 79vh;
+    max-height: 98.5vh;
+    margin-top: 2.5vh;
+    border: 1px solid #000000;
+    position: relative;
+  }
+
+
+  .row_four .column_one {
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    min height: 78.5vh;
+    max-height: 101vh;
+    float: left;
+    margin: 2.5vh;
+  }
+
+  .row_four .column_one h3 {
+    text-align: center;
+    margin: 0;
+    font-weight: 100;
+    padding-bottom: 1vh;
+  }
+
+  .row_four .column_one img{
+    animation: hover_after 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    width: 100%;
+    filter: grayscale(100%);
+  }
+
+  .row_four .column_one img:hover{
+    animation: hover 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  .row_four .column_one p {
+    text-align: justify;
+    margin: 1.5vh 5vh 0 5vh;
+    font-family: alegreya,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-transform: none;
+  }
+
+  .row_four .column_two {
+    display: inline-block;
+    position: relative;
+    width: 45%;
+    min height: 78.5vh;
+    max-height: 101vh;
+    float: right;
+    margin: 2.5vh;
+  }
+
+  .row_four .column_two h3 {
+    text-align: center;
+    margin: 0;
+    font-weight: 100;
+    padding-bottom: 1vh;
+  }
+
+  .row_four .column_two img{
+    animation: hover_after 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    width: 100%;
+    filter: grayscale(100%);
+  }
+
+  .row_four .column_two img:hover{
+    animation: hover 0.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+
+  .row_four .column_two p {
+    text-align: justify;
+    margin: 1.5vh 5vh 0 5vh;
+    font-family: alegreya,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-transform: none;
+  }
+
+  @keyframes hover {
+    0% {filter: grayscale(100%);}
+    100% {filter: grayscale(0%);}
+  }
+
+  @keyframes hover_after {
+    0% {filter: grayscale(0%);}
+    100% {filter: grayscale(100%);}
+  }
+
+    .section_two {
+    position: relative;
+    margin-bottom: 8vh;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6vh;
+  }
+
+  .title .border {
+    border: 3px solid black;
+  }
+
+  .title .border h2 {
+    margin-bottom: 2.5vh;
+    width: 20vw;
+    padding: 15px 25px 15px 25px;
+    color: white;
+    background-color: #000000;
+    margin: 3px;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30vh;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .row_five {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  footer .row_five .column_one {
+    display: inline-block;
+    width: 20%;
+    margin-right: 10%;
+    float: left;
+  }
+
+  footer .row_five .column_one ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 1.8em;
+    font-size: 18px;
+    animation: text_hover_after 0.3s;
+    animation-fill-mode: forwards;
+  }
+
+  footer .row_five .column_one ul li a:hover {
+    animation: text_hover 0.3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes text_hover {
+    0% {color:#d3d3d3;}
+    100% {color:white;}
+  }
+
+  @keyframes text_hover_after {
+    0% {color:white;}
+    100% {color:#d3d3d3;}
+  }
+
+  footer .row_five .column_two {
+    display: inline-block;
+    width: 25%;
+    margin-left: 10%;
+    float: right;
+  }
+
+  footer .row_five .column_two .social_icons ul li {
+    display: inline-block;
+    font-size: 35px;
+  }
+
+  footer .row_five .column_two .social_icons ul li a {
+    margin-right: 1vw;
+    animation: icon_after 0.2s;
+    animation-fill-mode: forwards;
+  }
+
+  footer .row_five .column_two .social_icons ul li a:hover {
+    animation: icon 0.2s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes icon {
+    0% {color:#d3d3d3;}
+    100% {color:white;}
+  }
+
+  @keyframes icon_after {
+    0% {color:white;}
+    100% {color:#d3d3d3;}
+  }
+
+  @media only screen and (max-width:1305px) {
+
+    .section_one .row_one {
+      min-height: 10em;
+      max-height: 10em;
+      margin-top: 2em;
+      width: 100%;
+    }
+
+    .section_one .row_one .column_one {
+      display: block;
+      position: relative;
+      float: none;
+      min-width: 35em;
+      max-width: 35em;
+      border: 3px solid green;
+      margin: 0 auto;
+      animation: none;
+    }
+
+    .section_one .row_one .navigation {
+      position: relative;
+      display: block;
+      min-width: 100%;
+      max-width: 100%;
+      float: right;
+      margin-top: 2em;
+    }
+  }
